@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:root {
+    --standard-font: 'Roboto Mono', monospace;
+    --background-color: #404258;
+    --alternate-color-1: #474E68;
+    --alternate-color-2:  #50577A;
+    --text-color: #6B728E;
+}
+
+body {
+    margin: 1em;
+    background-color: var(--background-color);
+    font-family: var(--standard-font);
+}
+
+.header-container {
+    padding: 1rem;
+    margin: 4em 0em 2em 0em;
+    text-align: center;
+}
+
+.header-container > span {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-self: center;
+    align-content: center;
+    background-color: var(--alternate-color-1);
+    border-radius: 1rem;
+    padding: 1.5rem 10rem 1.5rem 10rem;
+}
+
+.header-item {
+    background-color: var(--alternate-color-2);
+    padding: 1.5em;
+    border-radius: 1rem;
+    color: white;
+    min-width: 5rem;
+    text-align: center;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.header-item:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.header-item:active {
+    background-color: #454b6a;
+}
