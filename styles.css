@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 
 :root {
-    --standard-font: 'Roboto Mono', monospace;
-    --background-color: #404258;
-    --alternate-color-1: #474E68;
-    --alternate-color-2:  #50577A;
-    --text-color: #6B728E;
+    --standard-font: 'DM Sans', sans-serif;
+    --background-color: #1F1F1F;
+    --alternate-color-1: #292929;
+    --alternate-color-2:  #c1ffb2;
+    --text-color: #298013;
 }
 
 body {
@@ -27,17 +27,19 @@ body {
     align-self: center;
     align-content: center;
     background-color: var(--alternate-color-1);
-    border-radius: 1rem;
-    padding: 1.5rem 10rem 1.5rem 10rem;
+    border-radius: 2.5rem;
+    padding: 2.5rem 4rem;
 }
 
 .header-item {
     background-color: var(--alternate-color-2);
     padding: 1.5em;
     border-radius: 1rem;
-    color: white;
+    color: var(--text-color);
     min-width: 5rem;
     text-align: center;
+    transition: ease-in-out all 0.1s;
+    font-weight: bold;
 }
 
 .header-item:not(:last-child) {
@@ -45,12 +47,13 @@ body {
 }
 
 .header-item:hover {
-    transform: scale(0.95);
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.05);
     cursor: pointer;
 }
 
 .header-item:active {
-    background-color: #454b6a;
+    background-color: #c1ffb2;
 }
 
 @media (max-width: 850px) {
